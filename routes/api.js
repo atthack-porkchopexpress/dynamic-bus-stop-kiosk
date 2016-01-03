@@ -15,11 +15,11 @@ router.get('/busRoutes', function(req, res) {
 
 router.post('/riderAtStop/:stopId', function(req, res) {
     console.log('Logging rider at: ' + req.params.stopId);
-    var postUrl = 'http://159.203.212.140:3000/v1/ericsson/route/:stopId?' + req.params.stopId;
+    var postUrl = 'http://159.203.212.140:3000/v1/ericsson/route/' + req.params.stopId;
+    console.log('posting to: ' + postUrl);
     request.post({url: postUrl }, function(err, postRes, body){
         var result = { success: false };
         if (!err && postRes.statusCode == 201) {
-
             //result = JSON.parse(body);
             result.success = true;
         } else {

@@ -1,6 +1,5 @@
 $(document).ready(function() {
    $('#requestBus').click(function(){
-       console.log('hey');
        requestBusMenu();
    });
 });
@@ -38,7 +37,7 @@ function requestBusMenu() {
             } else if (passedCurrentStop){
                 $('#stops').append( '<button type="button" ' +
                                     'class="btn btn-primary btn-lg stop-btn" ' +
-                                    'onclick="requestBus(' + stop.stopId + ')">' +
+                                    'onclick="requestBus(' + currentStop + ')">' +
                                     stop.stopName + '</button>');
                 if (stop.stopId !== busStops[busStops.length-1].stopId) {
                     $('#stops').append('<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>');
