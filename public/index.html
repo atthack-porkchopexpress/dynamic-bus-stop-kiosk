@@ -24,25 +24,46 @@
 
             <div class="masthead clearfix">
                 <div class="inner">
-                    <h3 class="masthead-brand">
-                        <img src="images/bus-icon.png" />
+                    <img class="bus-brand-img" src="images/bus-icon.png" />
+                    <h3 class="bus-brand">
                         Dynamic Bus Stop
+                    </h3>
+                    <h3 class="bus-stop">
+                        1666 - MLK @ U.S. 95 (S)
                     </h3>
                 </div>
             </div>
 
             <div class="inner cover">
-                <button type="button" class="btn btn-primary btn-lg">Going Downtown</button>
-                <h1 class="cover-heading">Cover your page.</h1>
-                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
                 <p class="lead">
-                    <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                    <!-- Home -->
+                    <div id="home" class="sub-page">
+                        <h2>Welcome to the MLK @ U.S. 95 (S) bus stop.</h2>
+                        <h3>What would you like to do?</h3>
+                        <button type="button" class="btn btn-primary btn-lg" id="requestBus">Request a Bus</button>
+                    </div>
+
+                    <!-- Displays the stops available -->
+                    <div id="stops" class="sub-page" style="display: none;"></div>
+
+                    <!-- Bus Requested -->
+                    <div id="bus-requested" class="sub-page" style="display: none;">
+                        <img src="images/check-mark.png" />
+                        <h3>You request has been submitted</h3>
+                        <p>Thank you for using the Dynamic Bus Stop</p>
+                    </div>
+
+                    <!-- Loading bus animation  -->
+                    <div id="bus-loading" class="sub-page" style="display: none;">
+                        <h3>Processing Request ...</h3>
+                        <img id="bus-loading" src="images/animated-bus.gif" />
+                    </div>
                 </p>
             </div>
 
             <div class="mastfoot">
                 <div class="inner">
-                    <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                    <p>Porkchop Express Original <a href="https://github.com/atthack-porkchopexpress">github</a></p>
                 </div>
             </div>
 
@@ -53,5 +74,6 @@
 </div>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bus-stop.js"></script>
 </body>
 </html>
