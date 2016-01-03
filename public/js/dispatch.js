@@ -110,7 +110,7 @@
             //$('#stopgrid tr').eq(idx+1).find('td').eq(2).html('<b>'+rowData.load+'</b>');
             $('#stopid-'+rowData.stopId+' .load').addClass('success');
             $('#stopid-'+rowData.stopId+' .load').html(rowData.load);
-            setTimeout(function() {$('#stopid-'+rowData.stopId+' .load').removeClass('success');}, 3000);
+            setTimeout(function() {$('#stopid-'+rowData.stopId+' .load').removeClass('success');}, 10000);
           } else {
             console.log("Is new and data is new so removing!! "+ rowData.stopId);
 
