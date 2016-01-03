@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kiosk UI used for dynamic bus routing">
+    <meta name="author" content="Eric Erickson">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Dynamic Bus Stop Kiosk</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bus-stop.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">
+                        <img src="images/bus-icon.png" />
+                        Bus Route 1052
+                    </h3>
+                </div>
+            </div>
+
+            <!--
+            <div class="inner cover">
+                <button type="button" class="btn btn-primary btn-lg">Going Downtown</button>
+                <h1 class="cover-heading">Cover your page.</h1>
+                <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                </p>
+            </div>
+
+            <button id="awesomebutton" class="btn btn-default" type="submit">Button</button>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                </div>
+            </div>
+-->
+
+
+            <div class="row">
+                <div id="griddata" class="col-xs-12 col-md-8" >
+                    <table id="stopgrid" class="table table-hover" style="height:200px">
+                        <tr>
+                            <th class="text-left">Stop Name</th>
+                            <th class="text-left">Stop ID</th>
+                            <th class="text-left">Passengers Waiting</th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="ptt" class="col-xs-6 col-md-4" >
+                    <iframe src="https://localhost/HelloPTT.html" style="height:450px; width:400px; border: none">
+
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Push-To-Talk</h4>
+            </div>
+            <div id="modalbody" class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dispatch.js" />
+
+</script>
+</body>
+</html>
