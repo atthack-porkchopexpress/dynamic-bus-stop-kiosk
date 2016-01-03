@@ -28,7 +28,7 @@ function requestBusMenu() {
 
     $.get('api/busRoutes', function(busStops) {
         var passedCurrentStop = false;
-        $('#stops').append( '<h3>Where would you like to go?</h3>' +
+        $('#stops').html(   '<h3>Where would you like to go?</h3>' +
                             '<p>These are the stops available on this bus line.</p>');
         busStops.forEach(function(stop){
             console.log(stop.stopId);

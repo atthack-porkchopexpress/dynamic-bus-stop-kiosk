@@ -1,6 +1,8 @@
 var request = require('request');
 var express = require('express');
 var router = express.Router();
+//var M2X = require("m2x");
+//var m2x = new M2X("3882ef44cf7075f56ce6023e3d05db10");
 
 router.get('/busRoutes', function(req, res) {
     var getUrl = 'http://159.203.212.140:3000/v1/ericsson/route'
